@@ -1,0 +1,67 @@
+.boite1{
+    border: 3px solid #000066;
+    background-color: red;
+    width:300px;
+    height:300px;
+    margin: auto
+        
+}
+.boite2{
+    border: 3px solid white;
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+/*    margin: 85px 85px 55px 55px;*/
+    margin-left: 65px;
+    margin-top: 35px;
+
+}
+.boite3{
+    border: 3px solid red;
+    background-color: yellow;
+    width:300px;
+    height:300px;
+    margin-top: -160px;
+    margin-left: 45%;
+    
+}
+
+.boite6{
+    border: 3px solid #000066;
+    background-color: red;
+    width:180px;
+    height:180px;
+    margin-left: 35%;
+    margin-top: -5%;
+   
+        
+    
+}
+
+
+.boite4{
+    border: 3px solid #008000;
+    background-color: yellow;
+    width:140px;
+    height:140px;
+    margin-top: -50%;
+    margin-left: 50px;
+    
+}
+.boite5{
+    border: 3px solid #000066;
+    background-color: #00e600;
+    width: 165px;
+    height: 165px;
+    margin-left:-30px;
+    margin-top: -10%;
+}
+
+
+
+
+p{
+    font-size: 25px;
+    margin-top: 0;
+    
+}

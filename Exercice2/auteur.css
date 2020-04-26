@@ -1,0 +1,148 @@
+
+.header{
+    display: flex;
+    height: 100px;
+}
+.header .texte{
+    width: 1100px;
+    height: 70px;
+    float: left;
+    
+}
+.header .texte #droit{
+    margin-top: -10px;
+    color: #006600;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 3px;
+    padding-top: 10px;
+   
+}
+.header .texte #milieu{
+    margin-top: -10px;
+    text-transform: capitalize;
+    color: darkslategrey;
+    margin-left: 30%;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+    
+.header .drapeau{
+    height: 70px;
+    width: 150px;
+    margin-left: 20px;
+        
+}
+.header .drapeau img{
+    
+    height: 60px;
+    width: 80px;
+}
+/*barre de navigation*/
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.navigation ul li {
+    float: left;
+}
+
+.navigation ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navigation ul li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color:  #006600;
+}
+#about{
+    float: right;
+}
+/* content */
+h3{
+    margin-left: 20px;
+    letter-spacing: 3px;
+    color: #006600;
+}
+.content{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    height: 20%;
+}
+.content .image{
+   width: 20%; 
+    float: left;
+    margin-left: 15px;
+}
+.content .image img{
+    height: 300px;
+    widows: 300px;
+}
+.content .apropos{
+    height: 300px;
+    width: 75%;
+    float: right;
+    margin-left: 2%;
+    background-color:darkslategrey;;
+    color: white;
+    padding-left: 20px;
+    text-align: justify;
+    padding-right: 20px;
+}
+
+/* footer */
+
+footer{
+
+background-color:#eee;
+border-top: 3px solid #aaa;
+position:absolute;
+bottom:0;
+width:100%;
+padding-top:50px;
+height:50px;
+}
+.footer p{
+    font-size: 15px;
+    text-align:center;
+     font-weight: bold;
+    color:dimgray;
+
+}
+.footer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: -50px;
+    overflow: hidden;
+}
+.footer ul li{
+float: left;
+}
+
+.footer ul li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    margin-right: 50px;
+    
+}
+.footer ul li a:hover{
+    text-decoration: none;
+    color: #006600;
+    font-weight: bold;
+}
+

@@ -1,0 +1,155 @@
+/*
+body{
+    width: 99%;
+    margin: 0;
+    padding: 0;
+}
+*/
+.header{
+    display: flex;
+    height: 100px;
+}
+.header .texte{
+    width: 1100px;
+    height: 70px;
+    float: left;
+   
+    
+}
+.header .texte #droit{
+    margin-top: -10px;
+    color: #006600;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 3px;
+    padding-top: 10px;
+/*    text-shadow: 0 0 3px #FF0000*/
+}
+.header .texte #milieu{
+    margin-top: -10px;
+    text-transform: capitalize;
+    color: darkslategrey;
+/*    text-shadow: 5px 3px #e6e600 ; */
+/*    font-weight: bold;*/
+    margin-left: 30%;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+    
+.header .drapeau{
+    height: 70px;
+    width: 150px;
+    margin-left: 20px;
+        
+}
+.header .drapeau img{
+    
+    height: 60px;
+    width: 80px;
+}
+/*barre de navigation*/
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.navigation ul li {
+    float: left;
+}
+
+.navigation ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navigation ul li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color:  #006600;
+}
+#about{
+    float: right;
+}
+
+/* content */
+.content{
+  
+    display: flex;
+    height: 380px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.content .image{
+    float: left;
+}
+.content .image img{
+   height: 370px;
+    width: 500px;
+}
+.content .comments{
+    height: 380px;
+   float:right;
+    width: 400px;
+    margin:auto;
+    background-color:  #f0f5f5;
+    text-indent: 10px;
+    text-align: justify;
+}
+.content .comments h2{
+    color:#006600; 
+}
+.content .comments strong{
+    color:#006600;  
+}
+/* footer */
+
+footer{
+
+background-color:#eee;
+border-top: 3px solid #aaa;
+position:absolute;
+bottom:0;
+width:100%;
+padding-top:50px;
+height:50px;
+}
+.footer p{
+    font-size: 15px;
+    text-align:center;
+     font-weight: bold;
+    color:dimgray;
+
+}
+.footer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: -50px;
+    overflow: hidden;
+}
+.footer ul li{
+float: left;
+}
+
+.footer ul li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    margin-right: 50px;
+    
+}
+.footer ul li a:hover{
+    text-decoration: none;
+    color: #006600;
+    font-weight: bold;
+}
+

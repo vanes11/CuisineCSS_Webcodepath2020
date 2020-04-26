@@ -1,0 +1,117 @@
+.content{
+    display: flex;
+    border: 3px solid #00b300;
+    width: 1000px;
+    height: 550px;
+    margin: auto;
+    
+}
+.form{
+    margin: auto;
+    width: 500;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+input{
+    display: block;
+    width: 350px;
+    height: 35px;
+    margin: 10px;
+    border-radius: none;
+   
+}
+
+input[type=checkbox]{
+  user-select: none;
+}
+
+input[type=submit]{
+    background-color: #002699;
+    width: 360px;
+    height: 35px;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;   
+    margin-top: 15px;
+}
+
+/* validation des input */
+
+input:valid{
+    border: 1px solid blue;
+}
+
+input:invalid{
+    border: 1px solid brown;    
+}
+
+
+legend{
+    color: #002699;
+    font-weight: bold;
+}
+
+h2{
+    color: #002699;
+    margin-top: -20px;
+}
+
+/* .condition est la classe qui contien notre checkbox, donc ici il est question de faire notre checbox personnalise de sorte a annuler l'effet par defaut*/
+
+.condition{
+    padding-left: 40px;
+    font-size: 10px;
+    color: #ccc;
+    user-select: none;
+    display: block;
+    position: relative;
+}
+
+.condition input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  margin-left: 10px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  
+        
+}
+
+
+.condition input:checked ~ .checkmark {
+    background-color:white;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.condition input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.condition .checkmark:after {
+  left: 5px;
+  top: 1px;
+  bottom: 1px;
+  width: 5px;
+  height: 10px;
+  border: 0.2px solid #ccc;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
