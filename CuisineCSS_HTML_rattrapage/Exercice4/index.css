@@ -1,0 +1,245 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    margin: 0;
+}
+
+.jeu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#entete {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 2.5em;
+    padding-left: 20px;
+    min-height: 40px;
+    max-height: 50px;
+}
+
+ #info {
+    display: flex;
+    text-align: center;
+    height: 100%;
+    padding: 0px 20px;
+    background-color: rgb(55, 226, 238);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top:0.6em;
+     margin-bottom: 0.5em;
+    
+}
+
+#game {
+    flex: 1 1 auto;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px 30px;
+    border-radius: 15px;
+    background-color: #f3be89;
+    background-image: linear-gradient(90deg,
+                    rgba(3, 2, 3, 0.3) -5%,
+                    rgba(0, 0, 0, 0) 4%,
+                    rgba(3, 2, 3, 0) 96%,
+                    rgba(3, 2, 3, 0.3) 102%),
+                linear-gradient(180deg,
+                    rgba(3, 2, 3, 0.2) -2%,
+                    rgba(0, 0, 0, 0) 4%,
+                    rgba(3, 2, 3, 0) 96%,
+                    rgba(3, 2, 3, 0.2) 100%);
+    box-shadow: 1px 10px 15px .5px #000000;
+
+}
+
+#game * {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: Chilanka, sans-serif;
+    color: black;
+}
+
+.bar {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 10px 5px 30px;
+    width: 100%;
+    min-height: 30px;
+}
+
+.bar div {
+    display: flex;
+       
+}
+ #score-bar .player {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0px 20px;
+}
+#player1{
+    border-right: 1px solid darkgray;
+    height: 100%;
+}
+#score-bar span{
+    color: darkslategrey;  
+}
+
+#score-bar #reset {
+    align-self: flex-start;
+    font-size: 15px;
+    cursor: pointer;
+    color: darkslategrey;
+    margin-right: 1.5em;
+}
+
+#board {
+    flex: 1 1 auto;
+    width: 100%;
+    background-image: radial-gradient(#044a34, black);
+}
+
+
+#board * {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    text-align: center;
+}
+
+#select-ui {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+    padding-top: 90px;
+    z-index: 71;
+    font-size: 25px;
+}
+
+ #select-ui .buttons {
+    margin-top: 25px;
+      margin-bottom: 4em;
+}
+    
+#select-ui h3{
+    color: #fffff5;
+    word-spacing: 5px;
+    text-align: center;
+}
+
+#select-ui a {
+    text-decoration: none;
+    padding: 7px 13px;
+    margin: 5px 10px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: rgba(255, 255, 255, .55);
+    border: 2px dashed rgba(255, 255, 255, 0);
+    border-radius: 1000px;
+    
+}
+#select-ui a:hover,
+.active {
+    border-color: ghostwhite;
+    color: white;
+}
+#game-board{
+    margin-top: -1.5em;
+}
+#game-board {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    height: 100%;
+/*    max-height: 50em;*/
+   
+}
+
+#game-board .tile {
+    border: 1px solid #fff9fb;
+    padding: 45px;
+}
+
+/* supprimons les bordueres externes de notre grid*/
+
+#game-board .tile:nth-child(-n+3) {
+    border-top: none;
+}
+
+#game-board .tile:nth-child(3n) {
+    border-right: none;
+}
+
+#game-board .tile:nth-last-child(-n+3) {
+    border-bottom: none;
+}
+
+#game-board .tile:nth-child(3n+1) {
+    border-left: none;
+}
+
+
+/*Passons au responsive  particulierement pour android*/
+
+@media only screen and (width:280px){
+    body {
+        width: 50vw;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0px;
+        margin: 0;
+    }
+    
+    .jeu {
+        margin-top: 15em;
+        margin-left: 15em;  
+    }
+    #select-ui .buttons{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 1em;
+        
+    }
+    .oneplayer{
+     margin-left: -10em;
+      width: 100vw;
+    }
+    .accueil{
+       margin-left: -10em; 
+    }
+    
+    .twoplayers{
+      margin-left: -10em;
+    width: 100vw
+    }
+    
+    #score-bar #reset {
+    margin-left: -15em;
+    }
+    #game-board{
+    margin-left: -1.5em;
+        margin-bottom: 0;
+    }
+}
+
